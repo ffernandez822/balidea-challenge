@@ -1,0 +1,11 @@
+# balidea_form.libraries.yml
+balidea-styling:
+  version: 1.x
+  css:
+    theme:
+      css/styles.css: {}
+  js: 
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+

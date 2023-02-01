@@ -1,0 +1,9 @@
+balidea_form.admin_settings_form:
+  path: '/admin/config/balidea_form/configuration'
+  defaults:
+    _form: '\Drupal\balidea_form\Form\ConfigForm'
+    _title: 'Configuration Form'
+  requirements:
+    _role: 'authenticated'
+  options:
+    _admin_route: TRUE  

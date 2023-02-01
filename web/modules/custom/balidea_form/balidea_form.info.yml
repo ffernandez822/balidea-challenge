@@ -1,0 +1,6 @@
+name: Form balidea Module
+description: Form for challenge of Fernandez Facundo
+package: Custom
+type: module
+version: 1.0
+core: 8.x

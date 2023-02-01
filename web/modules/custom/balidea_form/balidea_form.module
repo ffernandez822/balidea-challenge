@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function balidea_form_theme(){
+
+    return [
+        'balidea_form' => [
+          'render element' => 'form',
+        ],
+     
+      ];
+}
+
+
+function balidea_form_preprocess_html(&$variables) {
+    // Add node ID to the body class.
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if (is_object($node)) {
+      $variables['attributes']['class'][] = 'node-' . $node->id();
+       // Add content type body class.
+    $variables['attributes']['class'][] = 'node-type-' . str_replace('_', '-', $node->bundle());
+    }
+
+  }
+
+
+
